@@ -2,8 +2,6 @@ package com.rexel.tdengine.api;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.rexel.tdengine.cons.Constants;
-import com.rexel.tdengine.utils.PointUtils;
 import com.rexel.tdengine.utils.TdUtils;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -19,7 +17,6 @@ import java.sql.Statement;
 public class Select {
     public static void main(String[] args) throws SQLException {
         TdUtils tdUtils = TdUtils.getInstance();
-        PointUtils pointUtils = PointUtils.getInstance();
 
         Connection conn = tdUtils.getConnection();
         if (conn == null) {
@@ -38,15 +35,7 @@ public class Select {
         JSONArray jsonArray = new JSONArray();
         while(result.next()) {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put(Constants.TIME, result.getTimestamp(Constants.TIME));
-            pointUtils.getMockPointList().forEach(pointInfo -> {
-                String pointId = pointInfo.getPointId();
-                try {
-                    jsonObject.put(pointId, result.getDouble(pointId));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            });
+            jsonObject.put("time", result.getTimestamp("time"));
             jsonArray.add(jsonObject);
         }
         System.out.println("jsonArray=" + jsonArray.toJSONString());

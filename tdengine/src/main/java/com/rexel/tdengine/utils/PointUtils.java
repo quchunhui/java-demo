@@ -32,11 +32,7 @@ public class PointUtils {
         return SingletonInstance.INSTANCE;
     }
 
-    public List<PointInfo> getMockPointList() {
-        int productCount = 1;
-        int deviceCount = 100;
-        int pointCount = 1000;
-
+    public List<PointInfo> getMockPointList(int productCount, int deviceCount, int pointCount) {
         List<PointInfo> list = new ArrayList<>();
         for (int i = 1; i <= productCount; i++) {
             for (int j = 1; j <= deviceCount; j++) {
@@ -56,6 +52,7 @@ public class PointUtils {
                 }
             }
         }
+        System.out.println("mock count=" + list.size());
         return list;
     }
 }

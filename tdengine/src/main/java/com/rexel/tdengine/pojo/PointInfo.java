@@ -2,6 +2,7 @@ package com.rexel.tdengine.pojo;
 
 import com.rexel.tdengine.annotation.Tag;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 /**
@@ -10,9 +11,10 @@ import lombok.ToString;
  * @Author: chunhui.qu
  * @Date: 2020/10/15
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @ToString
-public class PointInfo {
+public class PointInfo extends AbstractPojo {
     /**
      * 产品标识
      */
@@ -80,14 +82,5 @@ public class PointInfo {
      */
     public String getTableName() {
         return productKey + "_" + deviceName + "_" + pointId;
-    }
-
-    /**
-     * 测点超级表名
-     *
-     * @return 超级表名
-     */
-    public String getSuperTableName() {
-        return "st_device_data_up";
     }
 }
