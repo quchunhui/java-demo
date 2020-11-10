@@ -1,0 +1,12 @@
+mindsphere:
+  api:
+    address: https://gateway.cn1.mindsphere-in.cn/sdk
+    accessId: rexelcn0-rexelmfapitest-1.0.0
+    secretkey: F7BNeiT7igDK0qcnn8B1iR2LDgnBwQyC7PYYh21a1yX
+    appName: rexelmfapitest
+    appVersion: 1.0.0
+    hostTenant: rexelcn0
+    userTenant: rexelcn0
+
+server:
+  port: 8081

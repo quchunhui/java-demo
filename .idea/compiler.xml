@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aliiot" />
+        <module name="alioss" />
+        <module name="alisms" />
+        <module name="dingtalk" />
+        <module name="dview" />
+        <module name="flink" />
+        <module name="hadoop" />
+        <module name="hbase" />
+        <module name="influxdb" />
+        <module name="javautils" />
+        <module name="mindsphere" />
+        <module name="mongodb" />
+        <module name="mybatis" />
+        <module name="parquet" />
+        <module name="redis" />
+        <module name="rocketmq" />
+        <module name="springboot" />
+        <module name="storm" />
+        <module name="tdengine" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

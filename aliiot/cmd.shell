@@ -1,0 +1,4 @@
+Dim WshShell
+Set WshShell = CreateObject("wscript.shell")
+WshShell.run("cmd /c cd C:\DView500\Jar")
+WshShell.run("cmd /c cd C:\DView500\Jar && java -classpath aliiot-1.0-jar-With-dependencies.jar demo.patomqtt.PatoMqttConnect >log.txt")

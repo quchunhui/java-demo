@@ -1,0 +1,13 @@
+---
+applications:
+- name: rexel-mindsphere-sdk-test
+  instances: 1
+  random-route: true
+  path: target/rexel-mindspere-sdk-0.0.1.jar
+  memory: 1G
+env:
+  HOST_ENVIRONMENT: cn1
+  MDSP_OS_VM_APP_NAME: rexelmfapitest
+  MDSP_OS_VM_APP_VERSION: 1.0.0
+  MDSP_KEY_STORE_CLIENT_ID: rexelcn0-rexelmfapitest-1.0.0
+  MDSP_KEY_STORE_CLIENT_SECRET: F7BNeiT7igDK0qcnn8B1iR2LDgnBwQyC7PYYh21a1yX
