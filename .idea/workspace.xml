@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904d144d-caec-498f-99e1-c48d8b69ade7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java" afterDir="false" />
+    <list default="true" id="f912d9a2-e600-43a6-ba99-4efdeee98d4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMulti.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiColumnModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TagUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TagUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/hadoop/target/" />
-    <ignored path="$PROJECT_DIR$/storm/target/" />
-    <ignored path="$PROJECT_DIR$/mindsphere/target/" />
-    <ignored path="$PROJECT_DIR$/mongodb/target/" />
-    <ignored path="$PROJECT_DIR$/flink/target/" />
-    <ignored path="$PROJECT_DIR$/hbase/target/" />
-    <ignored path="$PROJECT_DIR$/dview/target/" />
-    <ignored path="$PROJECT_DIR$/springboot/target/" />
-    <ignored path="$PROJECT_DIR$/tdengine/target/" />
     <ignored path="$PROJECT_DIR$/javautils/target/" />
-    <ignored path="$PROJECT_DIR$/alisms/target/" />
-    <ignored path="$PROJECT_DIR$/influxdb/target/" />
-    <ignored path="$PROJECT_DIR$/rocketmq/target/" />
     <ignored path="$PROJECT_DIR$/mybatis/target/" />
-    <ignored path="$PROJECT_DIR$/aliiot/target/" />
+    <ignored path="$PROJECT_DIR$/flink/target/" />
+    <ignored path="$PROJECT_DIR$/mindsphere/target/" />
+    <ignored path="$PROJECT_DIR$/alisms/target/" />
+    <ignored path="$PROJECT_DIR$/tdengine/target/" />
+    <ignored path="$PROJECT_DIR$/storm/target/" />
     <ignored path="$PROJECT_DIR$/dingtalk/target/" />
-    <ignored path="$PROJECT_DIR$/redis/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/parquet/target/" />
+    <ignored path="$PROJECT_DIR$/mongodb/target/" />
+    <ignored path="$PROJECT_DIR$/rocketmq/target/" />
+    <ignored path="$PROJECT_DIR$/aliiot/target/" />
     <ignored path="$PROJECT_DIR$/alioss/target/" />
+    <ignored path="$PROJECT_DIR$/hbase/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/dview/target/" />
+    <ignored path="$PROJECT_DIR$/influxdb/target/" />
+    <ignored path="$PROJECT_DIR$/springboot/target/" />
+    <ignored path="$PROJECT_DIR$/parquet/target/" />
+    <ignored path="$PROJECT_DIR$/redis/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,37 +36,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="1010922409">
+    <session id="-1644796375">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="19" />
+          <entry key="class" value="3" />
+          <entry key="java" value="45" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="45" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="40" />
-          <entry key="java" value="581" />
-          <entry key="xml" value="1" />
+          <entry key="dummy" value="63" />
+          <entry key="java" value="3073" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="581" />
-          <entry key="PLAIN_TEXT" value="40" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="3073" />
+          <entry key="PLAIN_TEXT" value="69" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -77,10 +77,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java">
+        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="122">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,30 +89,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="430">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+            <state relative-caret-position="318">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java">
+        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="342">
+              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,58 +121,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
+            <state relative-caret-position="232">
               <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiColumnModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="83" column="45" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowDatabases.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,18 +142,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiBatch.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMulti.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingle.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TagUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowTables.java" />
         <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleBatch.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/SuperTable.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/BasePojo.java" />
         <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/AbstractPojo.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/AnnotationUtils.java" />
         <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlSpeller.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlSpellerUtils.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/SqlConstants.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" />
+        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java" />
       </list>
     </option>
   </component>
@@ -212,52 +181,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -267,7 +246,7 @@
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -277,7 +256,7 @@
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -287,7 +266,7 @@
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo-macket" type="462c0819:PsiDirectoryNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -299,19 +278,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604982504320" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605233409611" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.rexel.tdengine.api" />
+      <recent name="com.rexel.tdengine.annotation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,11 +305,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InsertSingleColumnModelBatch">
-    <configuration name="InsertSingleColumnModelBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rexel.tdengine.api.InsertSingleColumnModelBatch" />
+  <component name="RunManager" selected="Application.CreateContinuousQuery">
+    <configuration name="CreateContinuousQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rexel.tdengine.api.CreateContinuousQuery" />
       <module name="tdengine" />
-      <option name="PROGRAM_PARAMETERS" value="1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rexel.tdengine.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rexel.tdengine.api.InsertBatch" />
+      <module name="tdengine" />
+      <option name="PROGRAM_PARAMETERS" value="10 100 1000 1 5000" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rexel.tdengine.api.*" />
@@ -363,14 +355,16 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.MybatisApplication" />
       <item itemvalue="Spring Boot.MindSphereApplication" />
       <item itemvalue="Spring Boot.MiddleWareApplication" />
-      <item itemvalue="Spring Boot.MybatisApplication" />
-      <item itemvalue="Application.InsertSingleColumnModelBatch" />
+      <item itemvalue="Application.InsertBatch" />
+      <item itemvalue="Application.CreateContinuousQuery" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InsertSingleColumnModelBatch" />
+        <item itemvalue="Application.CreateContinuousQuery" />
+        <item itemvalue="Application.InsertBatch" />
       </list>
     </recent_temporary>
   </component>
@@ -379,17 +373,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="904d144d-caec-498f-99e1-c48d8b69ade7" name="Default Changelist" comment="" />
-      <created>1604895060166</created>
+      <changelist id="f912d9a2-e600-43a6-ba99-4efdeee98d4b" name="Default Changelist" comment="" />
+      <created>1604983900844</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604895060166</updated>
-      <workItem from="1604895065231" duration="21854000" />
+      <updated>1604983900844</updated>
+      <workItem from="1604983905698" duration="27678000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1605011066376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605011066376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21854000" />
+    <option name="totallyTimeSpent" value="27678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="835" extended-state="6" />
@@ -414,7 +416,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38516405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6362339" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -436,44 +438,125 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java</url>
-          <line>97</line>
+          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java</url>
+          <line>58</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="clazz.annotationData().annotations" language="JAVA" />
+        <watch expression="clazz.getAnnotationType()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>clazz.getAnnotationType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clazz.annotationType</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clazz.annotationData().annotations</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clazz.annotationData</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiBatch.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/taosdata/jdbc/taos-jdbcdriver/2.0.9/taos-jdbcdriver-2.0.9.jar!/com/taosdata/jdbc/TSDBDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="-5500">
+          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TagUtils.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/Data.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="176">
+          <caret line="14" selection-start-line="12" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/ToString.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        <state relative-caret-position="130">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowTables.java">
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/annotation/ElementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/SuperTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiColumnModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowDatabases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -484,62 +567,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowDatabases.java">
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowTables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java">
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/SqlConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiColumnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="83" column="45" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="263">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -547,22 +585,111 @@
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="39" />
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java">
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="374">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/AbstractPojo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/AnnotationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

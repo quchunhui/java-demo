@@ -17,7 +17,7 @@ import java.util.List;
  * @Date: 2020/11/9
  */
 public class InsertBatch {
-    private static Statement stmt;
+    private static Statement statement;
 
     public static void main(String[] args) throws SQLException {
         int argsLength = 5;
@@ -40,14 +40,14 @@ public class InsertBatch {
         TdUtils tdUtils = TdUtils.getInstance();
         PointUtils pointUtils = PointUtils.getInstance();
 
-        Connection conn = tdUtils.getConnection();
-        if (conn == null) {
+        Connection connection = tdUtils.getConnection();
+        if (connection == null) {
             return;
         }
         System.out.println("getConnection");
 
-        stmt = conn.createStatement();
-        if (stmt == null) {
+        statement = connection.createStatement();
+        if (statement == null) {
             return;
         }
         System.out.println("createStatement");
@@ -67,13 +67,15 @@ public class InsertBatch {
             System.out.println("time=" + (endTime - startTime));
         }
 
+        statement.close();
+        connection.close();
         System.out.println("test end");
     }
 
     private static void createSuperTable(PointInfo pointInfo) {
         String sql = SqlUtils.getCreateSuperTableSql(pointInfo);
         try {
-            stmt.executeQuery(sql);
+            statement.executeQuery(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -83,7 +85,7 @@ public class InsertBatch {
         List<List<PointInfo>> splitList = CommonUtils.listSplit(pointInfoList, batchCount);
         for (List<PointInfo> split : splitList) {
             try {
-                stmt.executeUpdate(SqlUtils.insertBatchUsingSuper(split));
+                statement.executeUpdate(SqlUtils.insertBatchUsingSuper(split));
             } catch (SQLException e) {
                 e.printStackTrace();
             }

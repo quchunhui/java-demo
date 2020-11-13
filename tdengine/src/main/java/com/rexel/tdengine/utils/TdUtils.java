@@ -43,14 +43,13 @@ public class TdUtils {
 
         try {
             Class.forName("com.taosdata.jdbc.TSDBDriver");
-            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/stress_test?user=root&password=taosdata";
+            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/rexel_online";
             Properties connProps = new Properties();
-//            connProps.setProperty(TSDBDriver.PROPERTY_KEY_USER, "root");
-//            connProps.setProperty(TSDBDriver.PROPERTY_KEY_PASSWORD, "taosdata");
-//            connProps.setProperty(TSDBDriver.PROPERTY_KEY_CONFIG_DIR, "C:\\TDengine\\cfg");
+            connProps.setProperty(TSDBDriver.PROPERTY_KEY_USER, "root");
+            connProps.setProperty(TSDBDriver.PROPERTY_KEY_PASSWORD, "RexelRoot!@#");
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_CHARSET, "UTF-8");
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_LOCALE, "en_US.UTF-8");
-//            connProps.setProperty(TSDBDriver.PROPERTY_KEY_TIME_ZONE, "Asia/Shanghai");
+            connProps.setProperty(TSDBDriver.PROPERTY_KEY_TIME_ZONE, "Asia/Shanghai");
             connection = DriverManager.getConnection(jdbcUrl, connProps);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
