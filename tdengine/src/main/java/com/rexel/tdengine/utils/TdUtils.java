@@ -43,7 +43,7 @@ public class TdUtils {
 
         try {
             Class.forName("com.taosdata.jdbc.TSDBDriver");
-            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/rexel_online";
+            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/stress_test";
             Properties connProps = new Properties();
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_USER, "root");
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_PASSWORD, "RexelRoot!@#");

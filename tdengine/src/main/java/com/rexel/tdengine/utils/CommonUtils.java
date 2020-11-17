@@ -1,6 +1,7 @@
 package com.rexel.tdengine.utils;
 
 import com.rexel.tdengine.pojo.PointInfo;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,6 +17,16 @@ public class CommonUtils {
     public static String timeLongToStr(long time) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return sdf.format(new Date(time));
+    }
+
+    public static Date timeStrToDate(String time) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        try {
+            return sdf.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return new Date();
     }
 
     public static List<List<PointInfo>> listSplit(List<PointInfo> valueList, int splitLen) {

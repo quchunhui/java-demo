@@ -3,6 +3,7 @@ package com.rexel.tdengine.utils;
 import com.rexel.tdengine.pojo.PointInfo;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @ClassName PointUtils
@@ -32,7 +33,7 @@ public class PointUtils {
         return SingletonInstance.INSTANCE;
     }
 
-    public List<PointInfo> getMockPointList(int productCount, int deviceCount, int pointCount) {
+    public List<PointInfo> getMockPointList(int productCount, int deviceCount, int pointCount, String time) {
         List<PointInfo> list = new ArrayList<>();
         for (int i = 1; i <= productCount; i++) {
             for (int j = 1; j <= deviceCount; j++) {
@@ -41,18 +42,21 @@ public class PointUtils {
                     pointInfo.setProductKey("Product" + i);
                     pointInfo.setDeviceName("Device" + j);
                     pointInfo.setPointId("AI_POINT" + k);
-                    pointInfo.setName("测点" + k);
-                    pointInfo.setDataType("double");
-                    pointInfo.setMinimum("0");
-                    pointInfo.setMaximum("100000");
-                    pointInfo.setStep("1");
-                    pointInfo.setUnit("℃");
-                    pointInfo.setDescription("测点描述" + k);
+                    pointInfo.setTime(getTime(time));
+                    pointInfo.setValue(new Random().nextInt(10000));
                     list.add(pointInfo);
                 }
             }
         }
         System.out.println("mock count=" + list.size());
         return list;
+    }
+
+    private String getTime(String time) {
+        if (time == null || "".equals(time)) {
+            return CommonUtils.timeLongToStr(System.currentTimeMillis());
+        } else {
+            return time;
+        }
     }
 }

@@ -3,7 +3,6 @@ package com.rexel.tdengine.utils;
 import com.rexel.tdengine.cons.SqlConstants;
 import com.rexel.tdengine.pojo.PointInfo;
 import java.util.List;
-import java.util.Random;
 
 /**
  * @ClassName SqlSpeller
@@ -36,8 +35,7 @@ public class SqlUtils {
     public static String insertBatchUsingSuper(List<PointInfo> pointInfoList) {
         StringBuilder sql = new StringBuilder(SqlConstants.INSERT_INTO_HEAD);
         for (PointInfo pointInfo : pointInfoList) {
-            String sysTime = CommonUtils.timeLongToStr(System.currentTimeMillis());
-            String values = "\"" + sysTime + "\"" + "," + new Random().nextInt(10000);
+            String values = "\"" + pointInfo.getTime() + "\"" + "," + pointInfo.getValue();
             String sqlBody = SqlConstants.INSERT_INTO_BODY;
             sqlBody = sqlBody.replace(SqlConstants.PARAM_TABLE, pointInfo.getTableName());
             sqlBody = sqlBody.replace(SqlConstants.PARAM_SUPER_TABLE, pointInfo.getSuperTable());
