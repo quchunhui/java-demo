@@ -4,6 +4,7 @@ import com.rexel.tdengine.pojo.PointInfo;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -27,6 +28,20 @@ public class CommonUtils {
             e.printStackTrace();
         }
         return new Date();
+    }
+
+    public static Date getNextTime(Date date, int interval) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.SECOND, interval);
+        return calendar.getTime();
+    }
+
+    public static Date getNextMonth(Date date) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.MONTH, 1);
+        return calendar.getTime();
     }
 
     public static List<List<PointInfo>> listSplit(List<PointInfo> valueList, int splitLen) {
