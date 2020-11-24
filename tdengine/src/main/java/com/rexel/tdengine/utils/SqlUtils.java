@@ -5,12 +5,25 @@ import com.rexel.tdengine.pojo.PointInfo;
 import java.util.List;
 
 /**
- * @ClassName SqlSpeller
- * @Description SqlSpeller（单列模式）
+ * @ClassName SqlUtils
+ * @Description SqlUtils
  * @Author: chunhui.qu
  * @Date: 2020/11/11
  */
 public class SqlUtils {
+
+    /**
+     * 生成SQL语句
+     *
+     * @param database 数据库名称
+     * @return SQL语句
+     */
+    public static String getCreateDatabaseSql(String database) {
+        String sql = SqlConstants.CREATE_DATABASE;
+        sql = sql.replace(SqlConstants.PARAM_DATABASE, database);
+        return sql + ";";
+    }
+
     /**
      * 生成SQL语句
      * create table if not exists {table} ({field}) tags ({tag});

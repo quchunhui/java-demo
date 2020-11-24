@@ -15,13 +15,15 @@ import java.util.List;
  * @Date: 2020/10/16
  */
 public class CommonUtils {
+    private final static String FORMAT = "yyyy-MM-dd HH:mm:ss.SSS";
+
     public static String timeLongToStr(long time) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        SimpleDateFormat sdf = new SimpleDateFormat(FORMAT);
         return sdf.format(new Date(time));
     }
 
     public static Date timeStrToDate(String time) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+        SimpleDateFormat sdf = new SimpleDateFormat(FORMAT);
         try {
             return sdf.parse(time);
         } catch (ParseException e) {
@@ -30,7 +32,7 @@ public class CommonUtils {
         return new Date();
     }
 
-    public static Date getNextTime(Date date, int interval) {
+    public static Date getNextSecond(Date date, int interval) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.SECOND, interval);
@@ -46,7 +48,6 @@ public class CommonUtils {
 
     public static List<List<PointInfo>> listSplit(List<PointInfo> valueList, int splitLen) {
         List<List<PointInfo>> result = new ArrayList<>();
-
         for (int fromIndex = 0; fromIndex < valueList.size(); ) {
             int remainCount = valueList.size() - fromIndex;
             if (remainCount >= splitLen) {
@@ -56,7 +57,6 @@ public class CommonUtils {
             }
             fromIndex += splitLen;
         }
-
         return result;
     }
 }

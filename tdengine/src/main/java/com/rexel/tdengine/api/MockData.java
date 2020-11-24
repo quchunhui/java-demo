@@ -13,16 +13,25 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import lombok.SneakyThrows;
 
 /**
  * @ClassName MockData
  * @Description MockData
- * 启动命令：nohup java -classpath /home/radmin/package/tdengine-1.0-jar-with-dependencies.jar com.rexel.tdengine.api.MockData 1 50 100 "2015-02-01 00:00:00.000" "2017-12-31 23:59:59.999" 5 >/home/radmin/package/java_mock_thread.log &
+ * param1: 产品数量→1
+ * param2: 设备数量→50
+ * param3: 测点数量→100
+ * param4: 开始时间→"2015-01-01 00:00:00.000"
+ * param5: 结束时间→"2016-01-01 00:00:00.000"
+ * param6: 上报频率→5
+ * param7: 数据库名→"mock_data"
+ * example：nohup java -classpath /home/radmin/package/tdengine-1.0-jar-with-dependencies.jar com.rexel.tdengine.api.MockData 1 50 100 "2015-02-01 00:00:00.000" "2017-12-31 23:59:59.999" 5 "mock_data" >/home/radmin/package/java_mock_thread.log &
  * @Author: chunhui.qu
  * @Date: 2020/11/18
  */
 public class MockData extends Thread {
+    private final static int SPLIT_LEN = 500;
+    private PointUtils pointUtils = PointUtils.getInstance();
+    private TdUtils tdUtils = TdUtils.getInstance();
     private Statement statement;
     private int productCount;
     private int deviceCount;
@@ -30,15 +39,17 @@ public class MockData extends Thread {
     private Date fromDate;
     private Date toDate;
     private int interval;
+    private String database;
 
     private MockData(int productCount,
-        int deviceCount, int pointCount, Date fromDate, Date toDate, int interval) {
+        int deviceCount, int pointCount, Date fromDate, Date toDate, int interval, String database) {
         this.productCount = productCount;
         this.deviceCount = deviceCount;
         this.pointCount = pointCount;
         this.fromDate = fromDate;
         this.toDate = toDate;
         this.interval = interval;
+        this.database = database;
     }
 
     public static void main(String[] args) {
@@ -66,13 +77,16 @@ public class MockData extends Thread {
         // 6.时间间隔(秒)
         int interval = Integer.valueOf(args[5]);
         System.out.println("interval=" + interval);
+        // 7.数据库名称
+        String database = args[6];
+        System.out.println("database=" + database);
 
         // 按月生成模拟对象
         List<MockData> mockList = new ArrayList<>();
         while (fromDate.compareTo(toDate) <= 0) {
             Date from = fromDate;
             Date to =  CommonUtils.getNextMonth(fromDate);
-            mockList.add(new MockData(productCount, deviceCount, pointCount, from, to, interval));
+            mockList.add(new MockData(productCount, deviceCount, pointCount, from, to, interval, database));
             fromDate = to;
         }
 
@@ -83,73 +97,70 @@ public class MockData extends Thread {
         }
     }
 
-    @SneakyThrows
     @Override
     public void run() {
-        TdUtils tdUtils = TdUtils.getInstance();
-        Connection connection = tdUtils.getConnection();
-        if (connection == null) {
-            return;
-        }
-        System.out.println("getConnection");
-
         try {
-            statement = connection.createStatement();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        if (statement == null) {
-            return;
-        }
-        System.out.println("createStatement");
-
-        // 创建超级表
-        createSuperTable(new PointInfo());
-        System.out.println("createSuperTable");
-
-        PointUtils pointUtils = PointUtils.getInstance();
-
-        int loopCount = 0;
-        while (fromDate.compareTo(toDate) <= 0) {
-            // 上报时间
-            String time = CommonUtils.timeLongToStr(fromDate.getTime());
-            // 上报数据
-            List<PointInfo> pointList =
-                pointUtils.getMockPointList(productCount, deviceCount, pointCount, time);
-
-            // 批量插入
-            long startTime = System.currentTimeMillis();
-            batchInsert(pointList);
-            long expend = System.currentTimeMillis() - startTime;
-
-            // 下一次时间
-            loopCount ++;
-            fromDate = CommonUtils.getNextTime(fromDate, interval);
-            System.out.println("次数=" + loopCount + ", 时间=" + time + ", 耗时=" + expend);
-        }
-
-        statement.close();
-        connection.close();
-        System.out.println("mock end. fromDate=" + fromDate + ", toDate=" + toDate);
-    }
-
-    private void createSuperTable(PointInfo pointInfo) {
-        String sql = SqlUtils.getCreateSuperTableSql(pointInfo);
-        try {
-            statement.executeQuery(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void batchInsert(List<PointInfo> pointInfoList) {
-        List<List<PointInfo>> splitList = CommonUtils.listSplit(pointInfoList, 500);
-        for (List<PointInfo> split : splitList) {
-            try {
-                statement.executeUpdate(SqlUtils.insertBatchUsingSuper(split));
-            } catch (SQLException e) {
-                e.printStackTrace();
+            Connection connection = tdUtils.getConnection();
+            if (connection == null) {
+                return;
             }
+            System.out.println("getConnection.");
+
+            statement = connection.createStatement();
+            if (statement == null) {
+                return;
+            }
+            System.out.println("createStatement.");
+
+            // 创建数据库
+            createDatabase(database);
+            System.out.println("createDatabase.");
+
+            // 创建超级表
+            createSuperTable(new PointInfo(database));
+            System.out.println("createSuperTable.");
+
+            int loopCount = 0;
+            while (fromDate.compareTo(toDate) <= 0) {
+                // 数据上报时间
+                String time = CommonUtils.timeLongToStr(fromDate.getTime());
+                // 模拟上报数据
+                List<PointInfo> pointList =
+                    pointUtils.getMockPointList(productCount, deviceCount, pointCount, time);
+
+                // 批量插入数据
+                long startTime = System.currentTimeMillis();
+                batchInsert(pointList);
+                long expend = System.currentTimeMillis() - startTime;
+
+                // 计算下一次时间
+                loopCount ++;
+                fromDate = CommonUtils.getNextSecond(fromDate, interval);
+                System.out.println("loopCount=" + loopCount + ", time=" + time + ", expend=" + expend);
+            }
+
+            statement.close();
+            connection.close();
+            System.out.println("mock end. fromDate=" + fromDate + ", toDate=" + toDate);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void createDatabase(String database) throws SQLException {
+        String sql = SqlUtils.getCreateDatabaseSql(database);
+        statement.executeQuery(sql);
+    }
+
+    private void createSuperTable(PointInfo pointInfo) throws SQLException {
+        String sql = SqlUtils.getCreateSuperTableSql(pointInfo);
+        statement.executeQuery(sql);
+    }
+
+    private void batchInsert(List<PointInfo> pointInfoList) throws SQLException {
+        List<List<PointInfo>> splitList = CommonUtils.listSplit(pointInfoList, SPLIT_LEN);
+        for (List<PointInfo> split : splitList) {
+            statement.executeUpdate(SqlUtils.insertBatchUsingSuper(split));
         }
     }
 }

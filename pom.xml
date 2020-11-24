@@ -65,7 +65,7 @@
         <staxon.version>1.3</staxon.version>
         <storm-core.version>1.2.3</storm-core.version>
         <swagger.version>2.9.2</swagger.version>
-        <taos-jdbcdriver.version>2.0.10</taos-jdbcdriver.version>
+        <taos-jdbcdriver.version>2.0.12</taos-jdbcdriver.version>
         <thymeleaf.extras.shiro.version>2.0.0</thymeleaf.extras.shiro.version>
         <velocity.version>1.7</velocity.version>
         <xstream.version>1.4.3</xstream.version>

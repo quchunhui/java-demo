@@ -2,7 +2,6 @@ package com.rexel.tdengine.pojo;
 
 import com.rexel.tdengine.annotation.Tag;
 import lombok.Data;
-import lombok.ToString;
 
 /**
  * @ClassName PointInfo
@@ -11,8 +10,16 @@ import lombok.ToString;
  * @Date: 2020/11/12
  */
 @Data
-@ToString
 public class PointInfo {
+    public PointInfo(String database) {
+        this.database = database;
+    }
+
+    /**
+     * 数据库
+     */
+    private String database;
+
     /**
      * 产品标识
      */
@@ -56,6 +63,6 @@ public class PointInfo {
      * @return 超级表名
      */
     public String getSuperTable() {
-        return "st_device_data_up";
-    };
+        return database + "." + "st_device_data_up";
+    }
 }

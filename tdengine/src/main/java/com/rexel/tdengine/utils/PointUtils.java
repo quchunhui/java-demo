@@ -33,7 +33,17 @@ public class PointUtils {
         return SingletonInstance.INSTANCE;
     }
 
-    public List<PointInfo> getMockPointList(int productCount, int deviceCount, int pointCount, String time) {
+    /**
+     * 生成模拟数据
+     *
+     * @param productCount 产品数量
+     * @param deviceCount 设备数量
+     * @param pointCount 测点数量
+     * @param time 上报事件
+     * @return 结果集
+     */
+    public List<PointInfo> getMockPointList(
+        int productCount, int deviceCount, int pointCount, String time) {
         List<PointInfo> list = new ArrayList<>();
         for (int i = 1; i <= productCount; i++) {
             for (int j = 1; j <= deviceCount; j++) {

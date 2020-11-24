@@ -36,6 +36,11 @@ public class TdUtils {
         return SingletonInstance.INSTANCE;
     }
 
+    /**
+     * 建立Connection
+     *
+     * @return Connection
+     */
     public Connection getConnection() {
         if (connection != null) {
             return connection;
@@ -43,7 +48,7 @@ public class TdUtils {
 
         try {
             Class.forName("com.taosdata.jdbc.TSDBDriver");
-            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/stress_test";
+            String jdbcUrl = "jdbc:TAOS://rexel-ids001:6030/mock_data";
             Properties connProps = new Properties();
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_USER, "root");
             connProps.setProperty(TSDBDriver.PROPERTY_KEY_PASSWORD, "RexelRoot!@#");

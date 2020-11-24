@@ -6,19 +6,19 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * @ClassName TagUtils
- * @Description TagUtils
+ * @ClassName AnnotationUtils
+ * @Description AnnotationUtils
  * @Author: chunhui.qu
- * @Date: 2020/10/16
+ * @Date: 2020/11/11
  */
-public class AnnotationUtils {
+class AnnotationUtils {
     /**
      * 获取Tag字符串
      *
      * @param pointInfo PointInfo
      * @return tag字符串
      */
-    public static String getTagString(PointInfo pointInfo) {
+    static String getTagString(PointInfo pointInfo) {
         StringBuilder sb = new StringBuilder();
         Class clazz = pointInfo.getClass();
         for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
@@ -41,7 +41,7 @@ public class AnnotationUtils {
      * @param pointInfo PointInfo
      * @return tag value字符串
      */
-    public static String getTagValueString(PointInfo pointInfo) {
+    static String getTagValueString(PointInfo pointInfo) {
         StringBuilder sb = new StringBuilder();
         Class clazz = pointInfo.getClass();
         for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
