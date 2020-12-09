@@ -9,22 +9,18 @@
         <relativePath/>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>tdengine</artifactId>
+    <artifactId>seaweedfs</artifactId>
     <properties>
         <maven.install.skip>true</maven.install.skip>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.taosdata.jdbc</groupId>
-            <artifactId>taos-jdbcdriver</artifactId>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
     <build>

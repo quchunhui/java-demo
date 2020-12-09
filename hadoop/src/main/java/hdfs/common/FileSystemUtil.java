@@ -17,10 +17,11 @@ public class FileSystemUtil {
         Configuration conf = new Configuration();
         conf.set("dfs.client.block.write.replace-datanode-on-failure.policy", "NEVER");
         conf.set("dfs.client.block.write.replace-datanode-on-failure.enable", "true");
-        Path path = new Path("hdfs://10.11.0.193:9000/");
+        conf.set("dfs.client.use.datanode.hostname", "true");
+        Path path = new Path("hdfs://rexel-ids001:9000");
         try {
-            fileSystem = FileSystem.get(path.toUri(), conf);
-        } catch (IOException e) {
+            fileSystem = FileSystem.get(path.toUri(), conf, "zk_admin");
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
         return fileSystem;

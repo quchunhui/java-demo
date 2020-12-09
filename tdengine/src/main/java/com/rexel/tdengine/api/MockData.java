@@ -126,7 +126,7 @@ public class MockData extends Thread {
                 String time = CommonUtils.timeLongToStr(fromDate.getTime());
                 // 模拟上报数据
                 List<PointInfo> pointList =
-                    pointUtils.getMockPointList(productCount, deviceCount, pointCount, time);
+                    pointUtils.getMockPointList(database, productCount, deviceCount, pointCount, time);
 
                 // 批量插入数据
                 long startTime = System.currentTimeMillis();

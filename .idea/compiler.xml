@@ -22,6 +22,7 @@
         <module name="parquet" />
         <module name="redis" />
         <module name="rocketmq" />
+        <module name="seaweedfs" />
         <module name="springboot" />
         <module name="storm" />
         <module name="tdengine" />

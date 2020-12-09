@@ -36,19 +36,20 @@ public class PointUtils {
     /**
      * 生成模拟数据
      *
+     * @param database 数据库名
      * @param productCount 产品数量
      * @param deviceCount 设备数量
      * @param pointCount 测点数量
      * @param time 上报事件
      * @return 结果集
      */
-    public List<PointInfo> getMockPointList(
+    public List<PointInfo> getMockPointList(String database,
         int productCount, int deviceCount, int pointCount, String time) {
         List<PointInfo> list = new ArrayList<>();
         for (int i = 1; i <= productCount; i++) {
             for (int j = 1; j <= deviceCount; j++) {
                 for (int k = 1; k <= pointCount; k++) {
-                    PointInfo pointInfo = new PointInfo();
+                    PointInfo pointInfo = new PointInfo(database);
                     pointInfo.setProductKey("Product" + i);
                     pointInfo.setDeviceName("Device" + j);
                     pointInfo.setPointId("AI_POINT" + k);

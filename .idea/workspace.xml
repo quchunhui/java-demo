@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f912d9a2-e600-43a6-ba99-4efdeee98d4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="6df25c23-4f36-4f67-a4ee-0630c93813c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/seaweedfs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/api/FileUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/cons/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/src/main/java/hdfs/common/FileSystemUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/src/main/java/hdfs/common/FileSystemUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/src/main/java/hdfs/examples/CopyFromLocalFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/src/main/java/hdfs/examples/CopyFromLocalFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdengine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/MockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/javautils/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop/target/" />
+    <ignored path="$PROJECT_DIR$/influxdb/target/" />
+    <ignored path="$PROJECT_DIR$/storm/target/" />
+    <ignored path="$PROJECT_DIR$/springboot/target/" />
     <ignored path="$PROJECT_DIR$/mybatis/target/" />
-    <ignored path="$PROJECT_DIR$/flink/target/" />
-    <ignored path="$PROJECT_DIR$/mindsphere/target/" />
+    <ignored path="$PROJECT_DIR$/alioss/target/" />
     <ignored path="$PROJECT_DIR$/alisms/target/" />
     <ignored path="$PROJECT_DIR$/tdengine/target/" />
-    <ignored path="$PROJECT_DIR$/storm/target/" />
-    <ignored path="$PROJECT_DIR$/dingtalk/target/" />
+    <ignored path="$PROJECT_DIR$/aliiot/target/" />
+    <ignored path="$PROJECT_DIR$/hbase/target/" />
+    <ignored path="$PROJECT_DIR$/redis/target/" />
+    <ignored path="$PROJECT_DIR$/javautils/target/" />
+    <ignored path="$PROJECT_DIR$/parquet/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/flink/target/" />
+    <ignored path="$PROJECT_DIR$/dview/target/" />
     <ignored path="$PROJECT_DIR$/mongodb/target/" />
     <ignored path="$PROJECT_DIR$/rocketmq/target/" />
-    <ignored path="$PROJECT_DIR$/aliiot/target/" />
-    <ignored path="$PROJECT_DIR$/alioss/target/" />
-    <ignored path="$PROJECT_DIR$/hbase/target/" />
-    <ignored path="$PROJECT_DIR$/hadoop/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/dview/target/" />
-    <ignored path="$PROJECT_DIR$/influxdb/target/" />
-    <ignored path="$PROJECT_DIR$/springboot/target/" />
-    <ignored path="$PROJECT_DIR$/parquet/target/" />
-    <ignored path="$PROJECT_DIR$/redis/target/" />
+    <ignored path="$PROJECT_DIR$/dingtalk/target/" />
+    <ignored path="$PROJECT_DIR$/mindsphere/target/" />
+    <ignored path="$PROJECT_DIR$/seaweedfs/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,48 +46,66 @@
     <session id="-1644796375">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="45" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="3" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="45" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="3" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="63" />
-          <entry key="java" value="3073" />
-          <entry key="txt" value="6" />
-          <entry key="xml" value="2" />
+          <entry key="dummy" value="14" />
+          <entry key="java" value="489" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3073" />
-          <entry key="PLAIN_TEXT" value="69" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="489" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="408" selection-start-line="403" selection-end-line="408" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seaweedfs/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java">
+        <entry file="file://$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/api/FileUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="44">
+              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,42 +114,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java">
+        <entry file="file://$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/cons/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateDatabase.java">
+        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/MockData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="48">
+              <caret line="16" selection-start-line="16" selection-end-line="29" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java">
+        <entry file="file://$PROJECT_DIR$/tdengine/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="464">
+              <caret line="58" column="12" selection-start-line="12" selection-end-line="58" selection-end-column="12" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-            </state>
-          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -136,30 +150,23 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/Constants.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/SuperTable.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/BasePojo.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/AbstractPojo.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/AnnotationUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModelBatch.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlSpeller.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlSpellerUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/SqlConstants.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java" />
+        <option value="$PROJECT_DIR$/tdengine/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java" />
-        <option value="$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java" />
+        <option value="$PROJECT_DIR$/seaweedfs/pom.xml" />
+        <option value="$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/cons/URL.java" />
+        <option value="$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/cons/Constants.java" />
+        <option value="$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/api/FileUpload.java" />
       </list>
     </option>
   </component>
@@ -182,6 +189,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +200,61 @@
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seaweedfs" type="462c0819:PsiDirectoryNode" />
+              <item name="cons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="train" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,16 +286,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="train" type="b2602c69:ProjectViewProjectNode" />
@@ -244,54 +297,18 @@
               <item name="tdengine" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="cons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="train" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tdengine" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605233409611" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607479480070" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.rexel.tdengine.annotation" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -305,27 +322,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CreateContinuousQuery">
-    <configuration name="CreateContinuousQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rexel.tdengine.api.CreateContinuousQuery" />
-      <module name="tdengine" />
+  <component name="RunManager" selected="Application.FileUpload">
+    <configuration name="FileUpload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rexel.seaweedfs.api.FileUpload" />
+      <module name="seaweedfs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rexel.tdengine.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InsertBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rexel.tdengine.api.InsertBatch" />
-      <module name="tdengine" />
-      <option name="PROGRAM_PARAMETERS" value="10 100 1000 1 5000" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rexel.tdengine.api.*" />
+          <option name="PATTERN" value="com.rexel.seaweedfs.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -355,16 +358,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.MiddleWareApplication" />
       <item itemvalue="Spring Boot.MybatisApplication" />
       <item itemvalue="Spring Boot.MindSphereApplication" />
-      <item itemvalue="Spring Boot.MiddleWareApplication" />
-      <item itemvalue="Application.InsertBatch" />
-      <item itemvalue="Application.CreateContinuousQuery" />
+      <item itemvalue="Application.FileUpload" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreateContinuousQuery" />
-        <item itemvalue="Application.InsertBatch" />
+        <item itemvalue="Application.FileUpload" />
       </list>
     </recent_temporary>
   </component>
@@ -373,28 +374,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f912d9a2-e600-43a6-ba99-4efdeee98d4b" name="Default Changelist" comment="" />
-      <created>1604983900844</created>
+      <changelist id="6df25c23-4f36-4f67-a4ee-0630c93813c6" name="Default Changelist" comment="" />
+      <created>1607477340668</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604983900844</updated>
-      <workItem from="1604983905698" duration="27678000" />
+      <updated>1607477340668</updated>
+      <workItem from="1607477354452" duration="2694000" />
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1605011066376</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605011066376</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27678000" />
+    <option name="totallyTimeSpent" value="2694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="835" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -402,21 +396,21 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="FindBugs-IDEA" />
       <window_info anchor="bottom" id="SBT Console" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32952926" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32952926" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6362339" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39942938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -438,258 +432,61 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/api/FileUpload.java</url>
+          <line>16</line>
           <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="clazz.annotationData().annotations" language="JAVA" />
-        <watch expression="clazz.getAnnotationType()" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>clazz.getAnnotationType()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clazz.annotationType</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clazz.annotationData().annotations</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clazz.annotationData</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/taosdata/jdbc/taos-jdbcdriver/2.0.9/taos-jdbcdriver-2.0.9.jar!/com/taosdata/jdbc/TSDBDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5500">
-          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" selection-start-line="12" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar!/lombok/ToString.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/annotation/ElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/annotation/SuperTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertMultiColumnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertSingleColumnModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowDatabases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowStables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/ShowTables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/cons/SqlConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdengine/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="464">
+          <caret line="58" column="12" selection-start-line="12" selection-end-line="58" selection-end-column="12" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="408" selection-start-line="403" selection-end-line="408" />
+        </state>
+      </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seaweedfs/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        <state relative-caret-position="200">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/MockData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="16" selection-start-line="16" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/Select.java">
+    <entry file="file://$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/cons/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/PointInfo.java">
+    <entry file="file://$PROJECT_DIR$/seaweedfs/src/main/java/com/rexel/seaweedfs/api/FileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/pojo/AbstractPojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/AnnotationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/SqlUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/InsertBatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/PointUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/utils/TdUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tdengine/src/main/java/com/rexel/tdengine/api/CreateContinuousQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="44">
+          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
